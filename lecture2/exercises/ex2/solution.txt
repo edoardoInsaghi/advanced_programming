@@ -1,0 +1,37 @@
+
+1. Find out how many unique node names are present in the dataset.
+
+cut -d',' -f3 HPC_2k.log_structured.csv| sort | uniq | wc -l 
+
+
+
+2. Export the list from the previous point to a file named nodes.log
+
+cut -d',' -f3 HPC_2k.log_structured.csv| sort | uniq  > nodes.log
+
+
+
+3. Determine the number of times the "unavailable" event (E13) has been reported.
+
+cut -d',' -f9 HPC_2k.log_structured.csv | grep "E13" | wc -l  
+
+
+
+4. Identify the number of unique nodes that have reported either event E32 or event E33. 
+
+cut -d',' -f3 -f9  HPC_2k.log_structured.csv| grep -E "E32|E33" | sort | uniq | wc -l
+
+
+
+
+5. Calculate how many times the node "gige7" has reported a critical event (E15).
+
+cut -d',' -f3 -f9  HPC_2k.log_structured.csv | grep "gige7" | cut -d',' -f2 | grep "E15" | wc -l
+
+
+
+6. Find out how many times the "node-2" node has been reported in the logs.
+
+cut -d',' -f3 HPC_2k.log_structured.csv | grep -w "node-2" | wc -
+
+

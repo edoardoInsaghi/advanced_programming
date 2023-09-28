@@ -1,0 +1,17 @@
+alias myalias="ls -lA" #create shortcuts for a command
+
+cat #used to concatenate files
+
+head -n 5 #gets the first 5 lines of a file
+
+tail -n 4 #gets the last 4 lines of a file
+
+grep "echo" #finds all occurrences of the string "echo" in given file
+
+wc #counts lines, words, characters in a file
+
+| #pipe operator, just like %>% in dplyr
+
+file #smart command that tries to guess the type of file passed as an argument
+
+
