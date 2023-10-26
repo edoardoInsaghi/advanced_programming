@@ -1,6 +1,7 @@
 #include "../include/calculator.hpp"
 #include <iostream>
 
+
 namespace calculator{
 
 	double sum(double x, double y){
@@ -23,9 +24,4 @@ namespace calculator{
 		return x / y;
 	}
 }
-
-
-
-
-
 

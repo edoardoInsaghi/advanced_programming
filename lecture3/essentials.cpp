@@ -171,7 +171,7 @@ int main(){
 	
 	Point p;
 	p.x = 3;
-	p.y = 5;
+	p.y = 5; 
 
 	return 0;
 
