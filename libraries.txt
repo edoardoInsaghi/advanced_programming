@@ -1,0 +1,18 @@
+static libraries:
+
+compile main file with g++ -Ilibname -c main.cpp -> obtain main.o
+compile file.cpp inside the library with g++ -c sourcefile.cpp -> obrain sourcefile.o
+create archive from within the library with ar rs liblibname.a sourcefile.o -> obtain liblibname.a
+compile main with g++ main.o -LabsolutePath -l libname -o main -> obtain main.exe
+./main
+
+
+
+dynamic libraries:
+
+compile main file with g++ -Ilibname -c main.cpp -> obtain main.o
+compile source file with g++ -fPIC -c source file.cpp
+create dynamic library with g++ -shared -o liblibname.so sourcefile.o -> obtain liblibname.so
+
+
+

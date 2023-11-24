@@ -6,7 +6,8 @@
 class NewtonSolver {
 public:
   NewtonSolver(const std::function<double(const double&)> &f, 
-               const std::function<double(const double&)> &df, const double &x0,
+               const std::function<double(const double&)> &df,
+               const double &x0,
                const double &tolerance = 1e-12,
                const unsigned int &max_iterations = 100);
 

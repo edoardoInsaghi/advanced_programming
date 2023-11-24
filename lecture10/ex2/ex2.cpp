@@ -19,14 +19,14 @@ void print(std::vector<Book> &books) {
   }
 }
 
-bool sort_by_asc_year(Book &b1, Book &b2){
+bool sort_by_asc_year(const Book &b1, const Book &b2){
 
   return b1.publication_year < b2.publication_year;
 }
 
 class CompareByName{
 
-  bool operator()(Book &b1, Book &b2){return b1.author < b2.author;}
+  bool operator()(const Book &b1, const Book &b2){return b1.author < b2.author;}
 };
 
 int main() {
@@ -51,9 +51,6 @@ int main() {
   std::sort(books.begin(), books.end(), CompareByName{});
   std::cout << "Ordered by ascending author name: \n" << std::endl;
   print(books);
-
-  // Filter books by author.
-  // ...
 
   return 0;
 }

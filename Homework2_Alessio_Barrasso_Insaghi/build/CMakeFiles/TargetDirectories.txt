@@ -1,0 +1,4 @@
+/Users/home/Desktop/programs/advanced_programming/Homework2_Alessio_Barrasso_Insaghi/build/CMakeFiles/statsMod.dir
+/Users/home/Desktop/programs/advanced_programming/Homework2_Alessio_Barrasso_Insaghi/build/CMakeFiles/main.dir
+/Users/home/Desktop/programs/advanced_programming/Homework2_Alessio_Barrasso_Insaghi/build/CMakeFiles/edit_cache.dir
+/Users/home/Desktop/programs/advanced_programming/Homework2_Alessio_Barrasso_Insaghi/build/CMakeFiles/rebuild_cache.dir

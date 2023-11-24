@@ -14,7 +14,7 @@ int main() {
     // ...
 
     // Create a NewtonSolver instance and find the root.
-    const double x0 = 1;
+    const double x0 = 20;
     NewtonSolver solver(f, df, x0);
 
     const double root = solver.solve();
